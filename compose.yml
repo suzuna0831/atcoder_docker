@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: atcoder
+    build:
+      context: ./docker
+      args:
+        - UID=1000
+        - GID=1000
+        - USERNAME=user
+        - GROUPNAME=user
+    tty: true
+    volumes:
+      - ./work:/work
