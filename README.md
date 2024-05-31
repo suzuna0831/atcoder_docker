@@ -1,7 +1,7 @@
 # atcoder_docker
 AtCoder用docker.  
 `atcoder-library(acc)` `online-judge-tools(oj)` `cpp-dump(dump)` を使うことができます。
-- acc https://github.com/Tatamo/atcoder-clid
+- acc https://github.com/Tatamo/atcoder-cli
 - oj https://github.com/online-judge-tools/oj
 - dump https://github.com/philip82148/cpp-dump
 
