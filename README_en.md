@@ -68,7 +68,7 @@ Using the `g` command will bypass `dump` outputs.
 
 ~~~sh
 $ g <filename>
-$ g main.cpp
+$ g main.cpp # example
 ~~~
 
 `gd` and `g` are aliases set in the `Dockerfile`.

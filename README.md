@@ -54,7 +54,7 @@ $ gd main.cpp # example
 `g`コマンドを用いると`dump`を用いた出力はスルーされます。
 ~~~sh
 $ g <filename>
-$ g main.cpp
+$ g main.cpp # example
 ~~~
 `gd` `g`は`Dockerfile`で設定されるエイリアスです。
 ~~~Dockerfile
