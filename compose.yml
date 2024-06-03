@@ -6,5 +6,3 @@ services:
     tty: true
     volumes:
       - ./work:/work
-      - ./docker/ac-library:/work/ac-library
-      - ./docker/cpp-dump:/work/cpp-dump

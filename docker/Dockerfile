@@ -19,17 +19,15 @@ RUN pip3 install --break-system-packages -r requirements.txt && \
 
 RUN npm install -g atcoder-cli
 
-COPY templates ~/.config/atcoder-cli-nodejs/
+COPY templates /root/.config/atcoder-cli-nodejs
 RUN acc config default-task-choice all
 
-RUN git clone https://github.com/atcoder/ac-library.git ./ac-library
-RUN git clone https://github.com/philip82148/cpp-dump.git ./cpp-dump
+RUN git clone https://github.com/atcoder/ac-library.git /lib/ac-library
+RUN git clone https://github.com/philip82148/cpp-dump.git /lib/cpp-dump
 
-RUN echo 'alias g="g++ -std=c++20 -Wall -Wextra -Wshadow -Wfloat-equal -ftrapv -fsanitize=undefined,address -fno-omit-frame-pointer -fno-sanitize-recover -g -I /work/ac-library"' >> /home/${USERNAME}/.bashrc
-RUN echo 'alias gd="g++ -DDEBUG -std=c++20 -Wall -Wextra -Wshadow -Wfloat-equal -ftrapv -fsanitize=undefined,address -fno-omit-frame-pointer -fno-sanitize-recover -g -I /work/ac-library"' >> /home/${USERNAME}/.bashrc
+RUN echo 'alias g="g++ -std=c++20 -Wall -Wextra -Wshadow -Wfloat-equal -ftrapv -fsanitize=undefined,address -fno-omit-frame-pointer -fno-sanitize-recover -g -I /lib/ac-library"' >> ~/.bashrc
+RUN echo 'alias gd="g++ -DDEBUG -std=c++20 -Wall -Wextra -Wshadow -Wfloat-equal -ftrapv -fsanitize=undefined,address -fno-omit-frame-pointer -fno-sanitize-recover -g -I /lib/ac-library"' >> ~/.bashrc
 
-ENV TZ="Asia/Tokyo" \
-    LANG="ja_JP.UTF-8" \
-    LANGUAGE="ja_JP:en" 
+ENV TZ="Asia/Tokyo"
 
 WORKDIR /work
