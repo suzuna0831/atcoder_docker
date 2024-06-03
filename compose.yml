@@ -1,13 +1,10 @@
 services:
-  app:
+  atcoder:
     container_name: atcoder
     build:
       context: ./docker
-      args:
-        - UID=1000
-        - GID=1000
-        - USERNAME=user
-        - GROUPNAME=user
     tty: true
     volumes:
       - ./work:/work
+      - ./docker/ac-library:/work/ac-library
+      - ./docker/cpp-dump:/work/cpp-dump
