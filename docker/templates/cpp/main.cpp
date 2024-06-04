@@ -1,5 +1,5 @@
 #ifdef DEBUG
-#include "/work/cpp-dump/dump.hpp"
+#include "/lib/cpp-dump/dump.hpp"
 #define dump(...) cpp_dump(__VA_ARGS__)
 namespace cp = cpp_dump;
 #else
