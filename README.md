@@ -15,7 +15,7 @@ docker が使える状態を想定しています。
 
 ### 1. 環境構築
 ~~~sh
-$ docker compose up
+$ docker compose up -d
 $ docker compose exec atcoder bash # or any way you like. (e.g. vscode)
 ~~~
 
