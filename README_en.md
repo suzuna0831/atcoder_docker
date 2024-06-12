@@ -3,7 +3,8 @@
 ** Translated from Japanese using ChatGPT4o **
 
 Docker for AtCoder.  
-You can use `atcoder-library (acc)`, `online-judge-tools (oj)`, and `cpp-dump (dump)`.
+You can use `atcoder-library` `atcoder-cli(acc)`, `online-judge-tools (oj)`, and `cpp-dump (dump)`.
+- atcoder-library: https://github.com/atcoder/ac-library
 - acc: https://github.com/Tatamo/atcoder-cli
 - oj: https://github.com/online-judge-tools/oj
 - dump: https://github.com/philip82148/cpp-dump
@@ -19,7 +20,7 @@ Refer to the respective references for how to use `acc` and `oj`.
 ### 1. Setting Up the Environment
 
 ~~~sh
-$ docker compose up
+$ docker compose up -d
 $ docker compose exec atcoder bash # or any way you like (e.g., vscode)
 ~~~
 
@@ -94,6 +95,9 @@ $ acc s # == acc submit
 ## References
 
 ### atcoder-library
+- AtCoder. atcoder-library. https://github.com/atcoder-library
+
+### atcoder-cli
 - Tatamo. atcoder-cli. https://github.com/Tatamo/atcoder-cli.
 
 ### online-judge-tools
